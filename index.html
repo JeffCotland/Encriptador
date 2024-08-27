@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img src="assets/Logo.png" alt="logo de alura">
+    </header>
+    <main>
+        <section>
+            <textarea class="text-area" placeholder="Ingrese el texto aqui" rows="5" cols="20"></textarea>
+            <div>
+                <h6 class="informacion" >Solo letras minusculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()"> Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesEncriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="mensaje" id="mensajeEncri" rows="10" cols="20"  ></textarea>
+            <button class="copiar" id="clipBoard" onclick="copiarTexto()">Copiar</button>
+        </section>
+       
+    </main>
+    <script src="/script.js"></script>
+    <footer class="footer">
+        <p>Desarrollado por Jeff Contreras</p>
+    </footer>
+</body>
+</html>
+
